@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Achados, ofertas e produtos úteis selecionados em um só lugar. Descubra seus próximos achadinhos no Radar dos Achados."
+    />
+    <meta name="theme-color" content="#0b0d10" />
+    <title>Radar dos Achados — ofertas que valem a pena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#inicio" aria-label="Radar dos Achados — início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="3" />
+              <circle cx="18" cy="18" r="5" fill="currentColor" />
+              <path d="m27 27 8 8" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <path d="M18 8v4m10 6h-4M18 28v-4M8 18h4" stroke="#0B0D10" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand-copy">RADAR <span>DOS ACHADOS</span></span>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#sobre">Sobre nós</a>
+        </nav>
+
+        <form class="search-form" role="search">
+          <label class="sr-only" for="site-search">Buscar produtos</label>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
+          <input id="site-search" type="search" placeholder="O que você procura?" autocomplete="off" />
+          <kbd>/</kbd>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="live-dot"></span> SEU RADAR DE BOAS DESCOBERTAS</span>
+            <h1>ACHADOS QUE<br />VALEM O CLIQUE <span>🔥</span></h1>
+            <p>Produtos úteis, ofertas e descobertas que realmente merecem sua atenção.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#ofertas">🔥 &nbsp; VER ACHADOS <span aria-hidden="true">↗</span></a>
+              <span class="hero-note"><span class="hero-note-icon">✦</span> Boas descobertas, sem perder tempo.</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Oferta do dia: fone Lenovo Thinkplus GM2 TWS">
+            <div class="orbit orbit-outer"></div>
+            <div class="orbit orbit-inner"></div>
+            <span class="art-spark spark-one">✦</span>
+            <span class="art-spark spark-two">✳</span>
+            <span class="art-spark spark-three">✦</span>
+            <img class="hero-product-image" src="fone-lenovo-gm2.jpg" alt="Anúncio do fone Lenovo Thinkplus GM2 TWS: Bluetooth 5.3, microfone, até 5 horas de bateria e preço anunciado de R$ 78,99" fetchpriority="high" />
+            <div class="art-label"><span>🔥 OFERTA EM DESTAQUE</span><strong>Lenovo Thinkplus GM2</strong></div>
+            <span class="art-price">R$ 78,99 <small>confira no anúncio</small></span>
+          </div>
+          <div class="hero-bottom"><span>DESLIZE PARA DESCOBRIR</span><span class="scroll-line"></span></div>
+        </div>
+      </section>
+
+      <section class="featured section-pad" id="ofertas">
+        <div class="container">
+          <div class="offer-of-day">
+            <div class="offer-day-mark" aria-hidden="true">🔥</div>
+            <div class="offer-day-copy">
+              <span class="eyebrow">OFERTA DO DIA</span>
+              <strong>Fone Lenovo Thinkplus GM2 TWS</strong>
+              <span class="offer-day-rating"><span>★★★★★</span> 4,8/5 · 🛒 +10 mil vendidos</span>
+              <span class="offer-day-trust">Produto encontrado no Mercado Livre · Confira preço e disponibilidade no anúncio.</span>
+            </div>
+            <strong class="offer-day-price">R$ 78,99</strong>
+            <a class="button offer-day-button" href="https://meli.la/1x2dWZo" target="_blank" rel="sponsored nofollow noopener noreferrer">🔥 CONFERIR OFERTA <span>↗</span></a>
+          </div>
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow section-eyebrow">GARIMPADOS PRA VOCÊ</span>
+              <h2><span class="heading-icon">✳</span> ACHADOS EM DESTAQUE</h2>
+              <p>Um achado selecionado para você conferir direto no anúncio.</p>
+            </div>
+          </div>
+          <div class="product-grid" id="product-grid">
+            <article class="product-card" data-category="eletronicos gamer achadinhos ofertas" data-search="fone bluetooth lenovo thinkplus gm2 tws sem fio audio gamer baixa latencia">
+              <div class="product-image product-image-listing">
+                <span class="product-tag">🔥 OFERTA DO DIA</span>
+                <img src="fone-lenovo-gm2.jpg" alt="Anúncio do fone Lenovo Thinkplus GM2 TWS com estojo, fones brancos e LED gamer" fetchpriority="high" />
+              </div>
+              <div class="product-info">
+                <span class="product-category">ELETRÔNICOS <span>·</span> ÁUDIO GAMER</span>
+                <h3>Fone Bluetooth Lenovo Thinkplus GM2 TWS</h3>
+                <div class="product-facts">
+                  <span class="rating"><span>★★★★★</span> <strong>4,8/5</strong></span>
+                  <span class="sales-count">🛒 +10 mil vendidos</span>
+                </div>
+                <p class="product-description">Bluetooth 5.3, microfone embutido, resistência à água e poeira, até 5 horas de bateria, baixa latência para games, LED gamer, estojo de carregamento USB-C e áudio True Wireless (TWS).</p>
+                <div class="product-bottom">
+                  <div class="price"><span>PREÇO INFORMADO</span><strong>R$ 78,99</strong></div>
+                  <a class="button button-small" href="https://meli.la/1x2dWZo" target="_blank" rel="sponsored nofollow noopener noreferrer">🔥 CONFERIR OFERTA <span>↗</span></a>
+                </div>
+                <p class="product-trust">Produto encontrado no Mercado Livre. Confira o preço e a disponibilidade atualizados no anúncio.</p>
+              </div>
+            </article>
+            <article class="product-card" data-category="casa achadinhos ofertas" data-search="guarda chuva sombrinha automatico reforcado azul marinho vento uv compacto dobravel">
+              <div class="product-image product-image-listing">
+                <span class="product-tag">☂️ ACHADO PARA A ROTINA</span>
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_848700-MLA113672713173_062026-V.webp" alt="Guarda-chuva automático reforçado azul-marinho anunciado no Mercado Livre" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-info">
+                <span class="product-category">CASA <span>·</span> UTILIDADES</span>
+                <h3>Guarda-chuva Automático Reforçado Abre e Fecha Mais Forte</h3>
+                <div class="product-facts">
+                  <span class="rating"><span>★★★★★</span> <strong>4,8/5</strong></span>
+                  <span class="sales-count">🛒 +1.000 vendidos</span>
+                </div>
+                <p class="product-description">Azul-marinho e dobrável para levar na bolsa ou mochila. Abre e fecha automaticamente, tem 10 varetas de fibra de vidro, haste de aço, tecido com proteção UV e punho revestido em borracha EVA.</p>
+                <div class="product-bottom">
+                  <div class="price"><span>PREÇO INFORMADO</span><strong>R$ 33,85</strong></div>
+                  <a class="button button-small" href="https://meli.la/2iWSc7o" target="_blank" rel="sponsored nofollow noopener noreferrer">🔥 VER OFERTA <span>↗</span></a>
+                </div>
+                <p class="product-trust">Encontrado no perfil social do Mercado Livre que você enviou. Confira o preço e a disponibilidade atualizados no anúncio.</p>
+              </div>
+            </article>
+            <article class="product-card" data-category="eletronicos gamer achadinhos ofertas" data-search="microfone condensador rgb alta sensibilidade usb gamer streaming pc">
+              <div class="product-image product-image-listing">
+                <span class="product-tag">🎙️ PARA O SEU SETUP</span>
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_630363-MLA95520439480_102025-V.webp" alt="Microfone condensador RGB USB para gamer e streaming, anunciado no Mercado Livre" loading="lazy" decoding="async" />
+              </div>
+              <div class="product-info">
+                <span class="product-category">ELETRÔNICOS <span>·</span> GAMER</span>
+                <h3>Microfone Condensador RGB USB para Gamer e Streaming</h3>
+                <div class="product-facts">
+                  <span class="sales-count">🏪 Loja oficial · Geevon</span>
+                </div>
+                <p class="product-description">Microfone condensador USB com iluminação RGB e alta sensibilidade, para uso gamer e streaming. Consulte os detalhes e a compatibilidade no anúncio.</p>
+                <div class="product-bottom">
+                  <div class="price"><span>PREÇO NO PERFIL</span><strong>R$ 119,99</strong></div>
+                  <a class="button button-small" href="https://meli.la/1zuWfsd" target="_blank" rel="sponsored nofollow noopener noreferrer">🔥 VER OFERTA <span>↗</span></a>
+                </div>
+                <p class="product-trust">Preço exibido no perfil de afiliado enviado. Nota e vendas não estavam informadas nessa página; confira os dados atualizados no anúncio.</p>
+              </div>
+            </article>
+          </div>
+          <p class="search-empty" id="search-empty" hidden>Nenhum achadinho encontrado. Tente buscar por outro termo. <button type="button" id="clear-search">Limpar busca</button></p>
+          <div class="mobile-categories-link"><a class="text-link" href="#categorias">EXPLORAR CATEGORIAS <span>↗</span></a></div>
+          <p class="affiliate-note">Os preços e a disponibilidade podem mudar conforme o Mercado Livre. Alguns links podem gerar comissão para o Radar dos Achados, sem custo adicional para você.</p>
+        </div>
+      </section>
+
+      <section class="categories section-pad" id="categorias">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow section-eyebrow">UM CAMINHO MAIS RÁPIDO</span>
+              <h2><span class="heading-icon">▦</span> ENCONTRE POR CATEGORIA</h2>
+              <p>Escolha seu universo e descubra o próximo achado.</p>
+            </div>
+          </div>
+          <div class="category-grid">
+            <a class="category-card category-electronics" href="#ofertas" data-filter="eletronicos">
+              <span class="category-icon">🎧</span><span class="category-number">01</span>
+              <span class="category-copy"><strong>Eletrônicos</strong><small>Áudio e tecnologia no seu radar.</small></span><span class="category-arrow">↗</span>
+            </a>
+            <a class="category-card category-home" href="#ofertas" data-filter="casa">
+              <span class="category-icon">🏠</span><span class="category-number">02</span>
+              <span class="category-copy"><strong>Casa</strong><small>Utilidades para a rotina.</small></span><span class="category-arrow">↗</span>
+            </a>
+            <a class="category-card category-gaming" href="#ofertas" data-filter="gamer">
+              <span class="category-icon">🎮</span><span class="category-number">03</span>
+              <span class="category-copy"><strong>Gamer</strong><small>Acessórios para jogar melhor.</small></span><span class="category-arrow">↗</span>
+            </a>
+            <a class="category-card category-finds" href="#ofertas" data-filter="achadinhos">
+              <span class="category-icon">✨</span><span class="category-number">04</span>
+              <span class="category-copy"><strong>Achadinhos</strong><small>Descobertas selecionadas para você.</small></span><span class="category-arrow">↗</span>
+            </a>
+            <a class="category-card category-offers" href="#ofertas" data-filter="ofertas">
+              <span class="category-icon">🛍️</span><span class="category-number">05</span>
+              <span class="category-copy"><strong>Ofertas</strong><small>Veja os produtos em destaque.</small></span><span class="category-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="discovery">
+        <div class="container discovery-inner">
+          <span class="discovery-icon" aria-hidden="true">◉</span>
+          <div>
+            <span class="eyebrow">SUA PRÓXIMA DESCOBERTA ESTÁ AQUI</span>
+            <h2>👀 ENCONTROU UM ACHADO?</h2>
+            <p>Reunimos produtos selecionados para facilitar sua busca por boas opções e ofertas.</p>
+          </div>
+          <a class="button button-dark" href="#ofertas">VER TODOS OS PRODUTOS <span>↗</span></a>
+          <span class="discovery-decor" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="why section-pad" id="sobre">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow section-eyebrow">MENOS TEMPO PROCURANDO</span>
+              <h2><span class="heading-icon">✦</span> SEU RADAR, SEU ATALHO</h2>
+              <p>Uma curadoria leve para você encontrar coisas legais sem complicação.</p>
+            </div>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card"><span class="benefit-icon">⌕</span><span class="benefit-index">01</span><h3>Achados selecionados</h3><p>Produtos interessantes reunidos para facilitar sua busca.</p></article>
+            <article class="benefit-card"><span class="benefit-icon">💰</span><span class="benefit-index">02</span><h3>Preços interessantes</h3><p>Confira o valor atualizado diretamente no anúncio do produto.</p></article>
+            <article class="benefit-card"><span class="benefit-icon">★</span><span class="benefit-index">03</span><h3>Produtos bem avaliados</h3><p>Notas e avaliações disponíveis para ajudar na sua escolha.</p></article>
+            <article class="benefit-card"><span class="benefit-icon">🛒</span><span class="benefit-index">04</span><h3>Links diretos</h3><p>Acesse o anúncio e confira os detalhes com o vendedor.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram">
+        <div class="container instagram-inner">
+          <div class="instagram-art" aria-hidden="true">
+            <div class="insta-tile tile-one">✦</div><div class="insta-tile tile-two">📦</div><div class="insta-tile tile-three">⚡</div>
+            <div class="instagram-logo">◎</div>
+          </div>
+          <div class="instagram-copy">
+            <span class="eyebrow">ACHADOS TAMBÉM NO SEU FEED</span>
+            <h2>📲 SIGA O RADAR</h2>
+            <strong class="instagram-handle">@rada_rdosachadosofc</strong>
+            <p>Quer descobrir novos achados antes? Siga <strong>@rada_rdosachadosofc</strong> no Instagram e acompanhe nossas novidades e ofertas.</p>
+            <div class="social-buttons">
+              <a class="button button-primary" href="https://www.instagram.com/rada_rdosachadosofc/" target="_blank" rel="noopener noreferrer">SEGUIR NO INSTAGRAM <span>↗</span></a>
+              <a class="button button-social" href="https://k.kwai.com/u/@radardosachadosfc/69ECCBDa" target="_blank" rel="noopener noreferrer">ACOMPANHAR NO KWAI <span>↗</span></a>
+            </div>
+          </div>
+          <span class="instagram-hashtag">#ACHADINHOS</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-about">
+            <a class="brand footer-brand" href="#inicio">
+              <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="3" /><circle cx="18" cy="18" r="5" fill="currentColor" /><path d="m27 27 8 8" stroke="currentColor" stroke-width="4" stroke-linecap="round" /></svg>
+              </span>
+              <span class="brand-copy">RADAR <span>DOS ACHADOS</span></span>
+            </a>
+            <p>Achados, ofertas e produtos úteis em um só lugar. Seu próximo favorito está no radar.</p>
+          </div>
+          <div class="footer-links">
+            <h3>NAVEGAÇÃO</h3><a href="#inicio">Início</a><a href="#ofertas">Ofertas</a><a href="#categorias">Categorias</a><a href="#sobre">Sobre nós</a>
+          </div>
+          <div class="footer-links">
+            <h3>ACOMPANHE</h3><a href="https://www.instagram.com/rada_rdosachadosofc/" target="_blank" rel="noopener noreferrer">@rada_rdosachadosofc ↗</a><a href="https://k.kwai.com/u/@radardosachadosfc/69ECCBDa" target="_blank" rel="noopener noreferrer">Kwai · @radardosachadosfc ↗</a>
+          </div>
+          <div class="footer-disclaimer">
+            <span class="eyebrow">UM AVISO IMPORTANTE</span>
+            <p>Os preços e a disponibilidade podem mudar conforme o Mercado Livre. Alguns links são de afiliado e podem gerar comissão sem custo adicional para você. Confira as condições atualizadas na página do produto.</p>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Radar dos Achados. Todos os direitos reservados.</span><a href="#inicio">DE VOLTA AO TOPO ↑</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
